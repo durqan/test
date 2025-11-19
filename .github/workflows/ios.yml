@@ -23,6 +23,8 @@ jobs:
       - name: Build React app
         run: CI=false npm run build
 
+
+
       - name: Install Capacitor iOS
         run: |
           npx cap add ios
