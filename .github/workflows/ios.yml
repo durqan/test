@@ -1,4 +1,4 @@
-name: Build iOS IPA
+name: Build iOS App
 on:
   push:
     branches: [ main ]
@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: '20'
 
@@ -23,26 +23,21 @@ jobs:
       - name: Build React app
         run: CI=false npm run build
 
-
-
-      - name: Install Capacitor iOS
-        run: |
-          npx cap add ios
-          npx cap sync
+      - name: Sync Capacitor
+        run: npx cap sync
 
       - name: Install CocoaPods
         run: |
           cd ios/App
           pod install
 
-      - name: Create IPA
+      - name: Build iOS project
         run: |
           cd ios/App
-          xcodebuild -workspace App.xcworkspace -scheme App -configuration Release -archivePath build/App.xcarchive archive
-          xcodebuild -exportArchive -archivePath build/App.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath build
+          xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -derivedDataPath build
 
-      - name: Upload IPA
-        uses: actions/upload-artifact@v4
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v3
         with:
-          name: ios-ipa
-          path: ios/App/build/App.ipa
+          name: ios-app
+          path: ios/App/build/Build/Products/Debug-iphoneos/App.app
