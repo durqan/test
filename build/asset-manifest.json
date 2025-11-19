@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b0a6ddbf.css",
+    "main.js": "/static/js/main.48e9ba75.js",
+    "static/js/239.96f6c650.chunk.js": "/static/js/239.96f6c650.chunk.js",
+    "static/js/977.ba6c9519.chunk.js": "/static/js/977.ba6c9519.chunk.js",
+    "static/js/455.c3537e10.chunk.js": "/static/js/455.c3537e10.chunk.js",
+    "static/js/453.079ef4f5.chunk.js": "/static/js/453.079ef4f5.chunk.js",
+    "static/media/anton-sc-latin-ext-400-normal.woff2": "/static/media/anton-sc-latin-ext-400-normal.fe9c72f20c12990430d6.woff2",
+    "static/media/anton-sc-latin-ext-400-normal.woff": "/static/media/anton-sc-latin-ext-400-normal.164e792308e7bc29b50e.woff",
+    "static/media/anton-sc-latin-400-normal.woff2": "/static/media/anton-sc-latin-400-normal.b05d94e86e69819bd2b6.woff2",
+    "static/media/anton-sc-latin-400-normal.woff": "/static/media/anton-sc-latin-400-normal.21b962a14583a92b0d99.woff",
+    "static/media/anton-sc-vietnamese-400-normal.woff2": "/static/media/anton-sc-vietnamese-400-normal.c98c70ba749b07bd3405.woff2",
+    "static/media/anton-sc-vietnamese-400-normal.woff": "/static/media/anton-sc-vietnamese-400-normal.fea11b5ca1d395356e14.woff",
+    "index.html": "/index.html",
+    "main.b0a6ddbf.css.map": "/static/css/main.b0a6ddbf.css.map",
+    "main.48e9ba75.js.map": "/static/js/main.48e9ba75.js.map",
+    "239.96f6c650.chunk.js.map": "/static/js/239.96f6c650.chunk.js.map",
+    "977.ba6c9519.chunk.js.map": "/static/js/977.ba6c9519.chunk.js.map",
+    "455.c3537e10.chunk.js.map": "/static/js/455.c3537e10.chunk.js.map",
+    "453.079ef4f5.chunk.js.map": "/static/js/453.079ef4f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0a6ddbf.css",
+    "static/js/main.48e9ba75.js"
+  ]
+}
